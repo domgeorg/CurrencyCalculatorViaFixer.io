@@ -50,10 +50,6 @@ dependencies {
     compile "com.squareup.okhttp3:okhttp:$okhttp_version"
     compile "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
 
-    //Parceler
-    compile "org.parceler:parceler-api:$parceler_version"
-    annotationProcessor "org.parceler:parceler:$parceler_version"
-
     //Dagger
     annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
     compile "com.google.dagger:dagger:$dagger_version"
@@ -66,8 +62,10 @@ dependencies {
     annotationProcessor "com.jakewharton:butterknife-compiler:$butter_knife_version"
 
     compile 'javax.annotation:javax.annotation-api:1.2'
-
+    
+    //rxjava
     compile 'io.reactivex:rxjava:1.2.0'
+    //rxandroid
     compile 'io.reactivex:rxandroid:1.2.1'
 
     testImplementation 'junit:junit:4.12'
