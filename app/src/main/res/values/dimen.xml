@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="toastTextSize">20sp</dimen>
+    <dimen name="baseTextSize">22sp</dimen>
+    <dimen name="calculatorTextSize">26sp</dimen>
+    <dimen name="button_separator_line_width">2dp</dimen>
+    <dimen name="decimalDigitsTextSize">24sp</dimen>
+</resources>

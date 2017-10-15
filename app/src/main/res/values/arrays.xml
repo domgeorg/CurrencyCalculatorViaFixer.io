@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <array name="currencies">
+        <item>€</item>
+        <item>AU$</item>
+        <item>лв</item>
+        <item>R$</item>
+        <item>CA$</item>
+        <item>CHF</item>
+        <item>¥</item>
+        <item>Kč</item>
+        <item>kr</item>
+        <item>£</item>
+        <item>HK$</item>
+        <item>kn</item>
+        <item>Ft</item>
+        <item>Rp</item>
+        <item>₪</item>
+        <item>₹</item>
+        <item>JP¥</item>
+        <item>₩</item>
+        <item>MX$</item>
+        <item>RM</item>
+        <item>Mkr</item>
+        <item>NZ$</item>
+        <item>₱</item>
+        <item>zł</item>
+        <item>lei</item>
+        <item>₽</item>
+        <item>SEkr</item>
+        <item>SG$</item>
+        <item>฿</item>
+        <item>₺</item>
+        <item>US$</item>
+        <item>R</item>
+    </array>
+</resources>
