@@ -127,6 +127,7 @@ Presenter surviving orientation changes
 
 ## License
 
+```
    Copyright 2017 georgiopoulos kyriakos
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -141,4 +142,4 @@ Presenter surviving orientation changes
    See the License for the specific language governing permissions and
    limitations under the License.
    
-   
+``` 
