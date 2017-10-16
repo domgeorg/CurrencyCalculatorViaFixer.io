@@ -50,10 +50,6 @@ dependencies {
     compile "com.squareup.okhttp3:okhttp:$okhttp_version"
     compile "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
 
-    //Parceler
-    compile "org.parceler:parceler-api:$parceler_version"
-    annotationProcessor "org.parceler:parceler:$parceler_version"
-
     //Dagger
     annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
     compile "com.google.dagger:dagger:$dagger_version"
@@ -67,8 +63,20 @@ dependencies {
 
     compile 'javax.annotation:javax.annotation-api:1.2'
 
+    //RxJava
     compile 'io.reactivex:rxjava:1.2.0'
+
+    //RxAndroid
     compile 'io.reactivex:rxandroid:1.2.1'
+
+    //IcePick
+    compile "frankiesardo:icepick:3.2.0"
+    compile "frankiesardo:icepick-processor:3.2.0"
+
+    //Nucleus
+    compile "info.android15.nucleus:nucleus:$nucleus_version"
+    compile "info.android15.nucleus:nucleus-support-v4:$nucleus_version"
+    compile "info.android15.nucleus:nucleus-support-v7:$nucleus_version"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
