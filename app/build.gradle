@@ -11,6 +11,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -19,6 +20,7 @@ android {
         }
     }
     packagingOptions {
+        exclude 'META-INF/LICENSE'
         exclude 'META-INF/rxjava.properties'
         exclude 'lib/mips/librealm-jni.so'
         exclude 'lib/x86_64/librealm-jni.so'
@@ -63,7 +65,10 @@ dependencies {
 
     compile 'javax.annotation:javax.annotation-api:1.2'
 
+    //RxJava
     compile 'io.reactivex:rxjava:1.2.0'
+
+    //RxAndroid
     compile 'io.reactivex:rxandroid:1.2.1'
 
     //Nucleus
@@ -72,9 +77,13 @@ dependencies {
     compile "info.android15.nucleus:nucleus-support-v7:$nucleus_version"
 
     //IcePick
-    compile "frankiesardo:icepick:$icepick_version"
-    compile "frankiesardo:icepick-processor:$icepick_version"
+    api "frankiesardo:icepick:$icepick_version"
+    compileOnly "frankiesardo:icepick-processor:$icepick_version"
+    annotationProcessor "frankiesardo:icepick-processor:$icepick_version"
 
+    //Project Lombok
+    provided "org.projectlombok:lombok:1.16.16"
+    annotationProcessor "org.projectlombok:lombok:1.16.16"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
