@@ -49,7 +49,7 @@
                         android:padding="@dimen/button_separator_line_width"
                         android:scrollHorizontally="true"
                         android:singleLine="true"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/colorAccent"
                         android:textSize="@dimen/calculatorTextSize"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -70,7 +70,7 @@
                 android:layout_marginEnd="2dp"
                 android:layout_marginTop="2dp"
                 android:layout_weight="1"
-                android:background="@drawable/primary_ripple"
+                android:background="@drawable/spinner_ripple"
                 android:entries="@array/currencies" />
 
             <Button
@@ -91,7 +91,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/button_separator_line_width"
                 android:layout_weight="1"
-                android:background="@drawable/primary_ripple"
+                android:background="@drawable/spinner_ripple"
                 android:entries="@array/currencies" />
 
             <Button

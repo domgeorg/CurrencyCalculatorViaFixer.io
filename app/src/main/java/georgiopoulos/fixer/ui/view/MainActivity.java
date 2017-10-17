@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements MainMvpView{
 
     public static final  String        MATH_OPERATORS = "+-*/";
     private static final String        MATH_NUMBERS   = "0123456789";
-    private StringBuilder mathStr        = new StringBuilder();
+    private StringBuilder mathStr       = new StringBuilder();
     private DecimalFormat decimalFormat = new DecimalFormat("#.##",new DecimalFormatSymbols(Locale.US));
 
     @BindView(R.id.calculator_text_view)
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements MainMvpView{
         String s = mathStr.toString();
 
         if(s.length()==0 || s.contains("+")||s.contains("*")||s.contains("(")||s.contains(")")||s.contains("/")||s.contains("-")){
-            new SuperToast(this).setText("Set a valid amount :p").setTextSize(R.dimen.toastTextSize).setTextColor(PaletteUtils.getSolidColor(PaletteUtils.BLACK)).setDuration(Style.DURATION_SHORT).setFrame(Style.FRAME_STANDARD).setColor(getResources().getColor(R.color.colorAccent)).setAnimations(Style.ANIMATIONS_SCALE).show();
+            new SuperToast(this).setText("Set a valid amount :p").setTextSize(R.dimen.toastTextSize).setTextColor(PaletteUtils.getSolidColor(PaletteUtils.BLACK)).setDuration(Style.DURATION_SHORT).setFrame(Style.FRAME_STANDARD).setColor(getResources().getColor(R.color.colorToast)).setAnimations(Style.ANIMATIONS_SCALE).show();
         }
         else{
             try{
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements MainMvpView{
                     mathStr.setLength(0);
                     mathStr.append(decimalFormat.format(result));
                     calculatorTextView.setText(mathStr);
-                    new SuperToast(this).setText(rateRealm.currencyAmount(itemPositionBase,Double.valueOf(s))+"\n=\n"+rateRealm.currencyAmount(itemPositionExchange, result)).setTextSize(R.dimen.toastTextSize).setTextColor(PaletteUtils.getSolidColor(PaletteUtils.BLACK)).setDuration(Style.DURATION_LONG).setFrame(Style.FRAME_STANDARD).setColor(getResources().getColor(R.color.colorAccent)).setAnimations(Style.ANIMATIONS_FLY).show();
+                    new SuperToast(this).setText(rateRealm.currencyAmount(itemPositionBase,Double.valueOf(s))+"\n=\n"+rateRealm.currencyAmount(itemPositionExchange, result)).setTextSize(R.dimen.toastTextSize).setTextColor(PaletteUtils.getSolidColor(PaletteUtils.BLACK)).setDuration(Style.DURATION_LONG).setFrame(Style.FRAME_STANDARD).setColor(getResources().getColor(R.color.colorToast)).setAnimations(Style.ANIMATIONS_FLY).show();
                 }
             }catch(Exception e){
                 e.printStackTrace();
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements MainMvpView{
 
     public void processError(Throwable e){
         Log.e(TAG,e.getLocalizedMessage(),e);
-        new SuperToast(this).setText(e.getMessage()).setTextSize(R.dimen.toastTextSize).setTextColor(PaletteUtils.getSolidColor(PaletteUtils.BLACK)).setDuration(Style.DURATION_SHORT).setFrame(Style.FRAME_STANDARD).setColor(getResources().getColor(R.color.colorAccent)).setAnimations(Style.ANIMATIONS_SCALE).show();
+        new SuperToast(this).setText(e.getMessage()).setTextSize(R.dimen.toastTextSize).setTextColor(PaletteUtils.getSolidColor(PaletteUtils.BLACK)).setDuration(Style.DURATION_SHORT).setFrame(Style.FRAME_STANDARD).setColor(getResources().getColor(R.color.colorToast)).setAnimations(Style.ANIMATIONS_SCALE).show();
     }
 
     @OnClick({R.id.btn0,R.id.btn1,R.id.btn2,R.id.btn3,R.id.btn4,R.id.btn5,R.id.btn6,R.id.btn7,R.id.btn8,R.id.btn9,R.id.plus,R.id.minus,R.id.multiply,R.id.divide,R.id.open_bracket,R.id.close_brackets})
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements MainMvpView{
                 calculatorTextView.setText(mathStr);
             }catch (Exception e){
                 Log.e(TAG,e.getLocalizedMessage(),e);
-                new SuperToast(this).setText("Incorrect Input").setTextSize(R.dimen.toastTextSize).setTextColor(PaletteUtils.getSolidColor(PaletteUtils.BLACK)).setDuration(Style.DURATION_SHORT).setFrame(Style.FRAME_STANDARD).setColor(getResources().getColor(R.color.colorAccent)).setAnimations(Style.ANIMATIONS_SCALE).show();
+                new SuperToast(this).setText("Incorrect Input").setTextSize(R.dimen.toastTextSize).setTextColor(PaletteUtils.getSolidColor(PaletteUtils.BLACK)).setDuration(Style.DURATION_SHORT).setFrame(Style.FRAME_STANDARD).setColor(getResources().getColor(R.color.colorToast)).setAnimations(Style.ANIMATIONS_SCALE).show();
             }
         }
     }
@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity implements MainMvpView{
     protected void onDestroy(){
         super.onDestroy();
         //if (subscription!=null)subscription.unsubscribe();
-       //realmUI.close();
+        //realmUI.close();
     }
 
 }

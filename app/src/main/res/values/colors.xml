@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#d9dfe4</color>
-    <color name="colorPrimaryDark">#b2aba8</color>
-    <color name="colorAccent">#e09c74</color>
-    <color name="colorAccentTransparent">#77e09c74</color>
-    <color name="colorPrimaryRippleBackground">#70e4e3d9</color>
+    <color name="colorPrimary">#c7c7c7</color>
+    <color name="colorPrimaryDark">#fafafa</color>
+    <color name="colorAccent">#ff1744</color>
+    <color name="colorAccentTransparent">#77ff1744</color>
+    <color name="colorToast">#ff616f</color>
+    <color name="colorPrimaryRippleBackground">#70fafafa</color>
+    <color name="colorSpinnerRippleBackground">#39c7c7c7</color>
 </resources>
