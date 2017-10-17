@@ -22,8 +22,8 @@
 
 ### Fixer is a simple calculator with currency exchange feature via fixer.io wich is a free JSON API for current and historical foreign exchange rates published by the European Central Bank:
 
-![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171015-190738.png)             ![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171015-190746.png)
-![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171015-190551.png)             ![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171015-190701.png)
+![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150536.png)             ![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150544.png)
+![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150602.png)             ![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150616.png)
 
 > I always like apps that still work offline, even if a I have an epic network coverage with [COSMOTE](https://www.cosmote.gr/hub/) and I never run out of data, I want to bring my future users the pleasure of slacking off in situations where the network coverage is awful. So I use Rxjava + Rxandroid to combine the results from the API call with the cached results from the Realm database in case they exists. Retrofit and Gson handles the REST communication. 
 
