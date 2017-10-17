@@ -18,12 +18,12 @@
 1. [Fixer.io](http://fixer.io/)
 
 ## Model View Presenter(MVP) for the presentation layer
-![](https://upload.wikimedia.org/wikipedia/commons/d/dc/Model_View_Presenter_GUI_Design_Pattern.png?1508088404474)
+![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/atomic-nucleus-467254_960_720.png)
 
 ### Fixer is a simple calculator with currency exchange feature via fixer.io wich is a free JSON API for current and historical foreign exchange rates published by the European Central Bank:
 
-![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150536.png)             ![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150544.png)
-![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150602.png)             ![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150616.png)
+![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150536.png)![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150544.png)
+![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150602.png)![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Screenshot_20171017-150616.png)
 
 > I always like apps that still work offline, even if a I have an epic network coverage with [COSMOTE](https://www.cosmote.gr/hub/) and I never run out of data, I want to bring my future users the pleasure of slacking off in situations where the network coverage is awful. So I use Rxjava + Rxandroid to combine the results from the API call with the cached results from the Realm database in case they exists. Retrofit and Gson handles the REST communication. 
 
@@ -112,16 +112,15 @@ Going back to the schedulers, I don’t want to write to the database in the mai
 ```
 - I'm using Butter Knife the popular View "injection" library for Android. This library writes common boilerplate view code for me based on annotations to save you time and significantly reduce the lines of boilerplate code written. Butterknife uses compile-time annotations which means there is no additional cost at run-time. Instead of slow reflection, code is generated ahead of time. Calling bind delegates to this generated code that can see and debug. This means that Butterknife does not slow down app at all!
 
-![](http://jakewharton.github.io/butterknife/static/logo.png)
+![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/Bread_And_Butter-512.png)
 
 - I centralize me singleton with Dagger 2 witch simplifies access to shared instances. Just as the ButterKnife library makes it easier to define references to Views, event handlers, and resources, Dagger 2 provides a simple way to obtain references to shared instances. Once I declare in Dagger my singleton instances FixerService I can declare fields with a simple @Inject annotation.
 
-![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/dagger2-dependency-injection.jpg)
+![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/syringe-512.png)
 
 - I follow the [KISS principle](https://www.wikiwand.com/en/KISS_principle) implementing Model View Presenter (MVP) for the presentation layer in order to clear separation of responsibilities between components. This separation allows for an easier understanding and maintenance of the code base.
 
-![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/1-8u0VKOgNhpBJzJBXjkeHvw.jpeg)
-
+![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/sports_equipment-12-512.png)
 
 ## TODO:
 Presenter surviving orientation changes
