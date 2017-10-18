@@ -26,5 +26,4 @@
     <string name="equal">=</string>
     <string name="complete">✔</string>
     <string name="error">X</string>
-    <string name="base_url">http://api.fixer.io</string>
 </resources>

@@ -16,6 +16,7 @@ buildscript {
         butter_knife_version = '8.8.1'
         nucleus_version = '3.0.0'
         icepick_version = '3.2.0'
+        lombok_version = '1.16.16'
     }
 
     dependencies {

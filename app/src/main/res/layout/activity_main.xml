@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="georgiopoulos.fixer.ui.view.MainActivity">
+    tools:context="georgiopoulos.fixer.ui.main.MainActivity">
 
     <TableLayout
         android:layout_width="match_parent"
