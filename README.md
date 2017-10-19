@@ -36,7 +36,7 @@ On Android MVP is a way to separate background tasks from activities/views/fragm
 > I always like apps that still work offline, even if a I have an epic network coverage with [COSMOTE](https://www.cosmote.gr/hub/) and I never run out of data, I want to bring my future users the pleasure of slacking off in situations where the network coverage is awful. So I use Rxjava + Rxandroid to combine the results from the API call with the cached results from the Realm database in case they exists. Retrofit and Gson handles the REST communication. 
 
 ### Currency conversion Formula:
-![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/CodeCogsEqn%20.png)
+![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/CodeCogsEqn.png)
 
 ### Start without Realm:
 ``` Java 
