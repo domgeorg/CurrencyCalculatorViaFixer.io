@@ -67,11 +67,11 @@ Now I'm going to add Realm in the middle. The response will be stored into the d
 
 The second time I query the data, I want to first obtain anything that is stored in the database and then obtain it fresh from the API.
 
-![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/fixer4.png)
+![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/fixer5.png)
 
 Going back to the schedulers, I don’t want to write to the database in the main thread (blocking the UI) and I don’t want to use either the IO thread since it may be blocked already with another slow network call. I' m going to use the Computation scheduler for that task.
 
-![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/fixer5.png)
+![](https://github.com/domgeorg/CurrencyCalculatorViaFixer.io/blob/master/currency%20exchange/fixer4.png)
 
 ***
 
